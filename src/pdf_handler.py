@@ -1,7 +1,7 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
-from vectordb_handler import load_vectordb
-from utils import load_config, timeit
+from src.vectordb_handler import load_vectordb
+from src.utils import load_config, timeit
 import pypdfium2
 config = load_config()
 

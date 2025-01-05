@@ -1,4 +1,4 @@
-from utils import load_config
+from src.utils import load_config
 import streamlit as st
 import sqlite3
 import os

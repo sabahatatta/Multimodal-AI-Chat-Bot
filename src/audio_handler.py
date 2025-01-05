@@ -1,7 +1,7 @@
 from transformers import pipeline
 import librosa
 import io
-from utils import load_config, timeit
+from src.utils import load_config, timeit
 import os
 import subprocess
 config = load_config()

@@ -1,6 +1,6 @@
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
-from utils import load_config
+from src.utils import load_config
 import chromadb
 
 config = load_config()
