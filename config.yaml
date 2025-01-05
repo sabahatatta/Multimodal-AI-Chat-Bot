@@ -1,0 +1,23 @@
+ollama:
+  embedding_model: "nomic-embed-text"  # Model used for embedding text
+  base_url: http://localhost:11434     # Base URL for Ollama API. Update based on your setup:
+                                       # - For Docker: http://ollama:11434
+                                       # - For Local Install (macOS/Linux): http://localhost:11434
+                                       # - For Windows with Docker: http://host.docker.internal:11434
+
+chat_config:
+  chat_memory_length: 2                # Number of past messages to remember
+  number_of_retrieved_documents: 3     # Number of documents retrieved for context
+
+pdf_text_splitter:
+  chunk_size: 1024                     # Number of characters per chunk (~256 tokens)
+  overlap: 50                          # Overlap between chunks for continuity
+  separators: ["\n", "\n\n"]           # How to split text (e.g., by newlines)
+
+whisper_model: "openai/whisper-small"  # Audio transcription model (small version)
+
+chromadb:
+  chromadb_path: "./chroma_db"         # Path to store ChromaDB database
+  collection_name: "pdfs"              # Collection name for PDF documents
+
+chat_sessions_database_path: "./chat_sessions/chat_sessions.db"  # Path to SQLite database
