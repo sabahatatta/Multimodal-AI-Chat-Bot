@@ -129,6 +129,6 @@ def get_timestamp():
 
 def get_avatar(sender_type):
     if sender_type == "user":
-        return "chat_icons/user_image.jpeg"
+        return "chat_icons/user_image.png"
     else:
-       return "chat_icons/bot_image.jpeg"
+       return "chat_icons/bot_image.png"
